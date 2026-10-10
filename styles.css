@@ -462,17 +462,18 @@ img {
   font-size: 0.85rem;
 }
 
-.post-navigation-previous {
-  grid-column: 2;
+.post-navigation-next {
+  order: 1;
   text-align: right;
+}
+
+.post-navigation-previous {
+  order: 2;
+  text-align: left;
 }
 
 @media (max-width: 600px) {
   .post-navigation {
     grid-template-columns: 1fr;
-  }
-
-  .post-navigation-previous {
-    grid-column: 1;
   }
 }
