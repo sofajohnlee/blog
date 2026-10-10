@@ -462,7 +462,7 @@ img {
   font-size: 0.85rem;
 }
 
-.post-navigation-next {
+.post-navigation-previous {
   grid-column: 2;
   text-align: right;
 }
@@ -472,7 +472,7 @@ img {
     grid-template-columns: 1fr;
   }
 
-  .post-navigation-next {
+  .post-navigation-previous {
     grid-column: 1;
   }
 }
