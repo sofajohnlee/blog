@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<article class="article">
+  <div class="article-meta">
+    {% for category in page.categories %}
+      <span class="post-tag">{{ category }}</span>
+    {% endfor %}
+    <time datetime="{{ page.date | date_to_xmlschema }}">
+      {{ page.date | date: "%Y.%m.%d" }}
+    </time>
+  </div>
+  <h1>{{ page.title }}</h1>
+  {% if page.description %}
+    <p class="article-lead">{{ page.description }}</p>
+  {% endif %}
+  <div class="article-content">
+    {{ content }}
+  </div>
+  <a class="back-link" href="{{ '/categories/' | relative_url }}">← 카테고리로 돌아가기</a>
+</article>
