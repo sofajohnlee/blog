@@ -43,3 +43,7 @@ This is a simple static blog that is easy to maintain and update with new posts 
 ## Japanese study (October 2026)
 
 English remains the default homepage and English archive. Japanese study is available at `/japanese/`, with three introductory posts on hiragana, katakana, and greetings/self-introductions. Posts use `study_language` to keep language lists and adjacent-post navigation separate. Existing posts default to English through `_config.yml`.
+
+## Cooking recipes
+
+Recipes are listed at `/recipes/`. Recipe posts use `layout: post`, `study_language: cooking`, and `categories: [recipes]`, with their own title, description, date and permalink. English remains the default home and archive; recipe navigation stays within cooking posts.

@@ -1,0 +1,24 @@
+---
+layout: default
+title: "요리 레시피"
+description: "가족과 함께 먹기 좋은 집밥: 인분별 재료, 조리 순서와 맛있게 만드는 요령을 정리하는 레시피 노트"
+permalink: /recipes/
+study_language: cooking
+---
+{% assign recipe_posts = site.posts | where: "study_language", "cooking" %}
+<div class="section-heading">
+  <span class="eyebrow">Home Cooking · Recipe Notes</span>
+  <h1>함께 먹는 집밥, 다시 만드는 레시피.</h1>
+  <p class="page-intro">가족과 함께 먹기 좋은 요리를 한 곳에 기록합니다. 인분에 맞춘 재료와 분량, 따라 하기 쉬운 조리 순서, 맛있게 만드는 요령을 정리합니다.</p>
+  <div class="actions"><a class="primary" href="#posts">레시피 보기</a><a class="secondary" href="{{ '/' | relative_url }}">영어 공부로 돌아가기</a></div>
+</div>
+<section class="category-section" id="posts">
+  <h2>요리 레시피 목록</h2>
+  <div class="post-list">
+    {% for post in recipe_posts %}
+    <article class="post-item"><span class="post-tag">요리 · {{ post.date | date: '%Y.%m.%d' }}</span><h3>{{ post.title | escape }}</h3><p>{{ post.description | escape }}</p><a href="{{ post.url | relative_url }}">레시피 읽기 →</a></article>
+    {% else %}
+    <article class="post-item"><span class="post-tag">집밥 노트</span><h3>레시피를 준비하고 있습니다.</h3><p>재료부터 완성까지, 다시 찾아보기 편한 요리 기록을 차곡차곡 모읍니다.</p></article>
+    {% endfor %}
+  </div>
+</section>
