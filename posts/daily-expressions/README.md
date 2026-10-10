@@ -1,14 +1,14 @@
 # Daily Expressions
 
-일상에서 자주 사용하는 영어 표현들을 모아놓은 공간입니다.
+일상 속에서 자주 쓰는 영어 표현들을 정리하는 카테고리입니다.
 
-## 📝 포스트 목록
+## 포스트 목록
 
-### 2026년 10월
+- [Greetings & Polite Expressions](./greetings-and-polite.md)
+- [Common Phrases in Workplace](./workplace-phrases.md)
 
-- [Greetings & Polite Expressions](./greetings-and-polite.md) - 인사말과 정중한 표현들
-- [Common Phrases in Workplace](./workplace-phrases.md) - 직장에서 자주 쓰는 표현들
+## 학습 목표
 
----
-
-더 많은 표현들이 추가될 예정입니다! 📌
+- 일상 대화에서 자연스럽게 사용할 수 있는 표현 익히기
+- 상황에 맞는 인사와 감사 표현을 이해하기
+- 영어 회화의 기본 톤과 예의를 익히기

@@ -1,22 +1,35 @@
-# 영어공부 블로그
+# 영어 공부 블로그
 
 영어 학습 여정을 기록하고 공유하는 블로그입니다.
 일상 속에서 배운 표현, 문법, 발음, 그리고 다양한 학습 팁들을 정리합니다.
 
-## 📚 카테고리
+## 블로그 소개
 
-- [Daily Expressions](./posts/daily-expressions/README.md) - 매일의 생활 속 표현
-- [Grammar](./posts/grammar/README.md) - 영문법 정리
-- [Pronunciation](./posts/pronunciation/README.md) - 발음 및 자연스러운 말하기
-- [Idioms](./posts/idioms/README.md) - 영어 숙어 및 관용구
-- [Study Tips](./posts/study-tips/README.md) - 효율적인 영어 학습법
+이 블로그는 영어를 꾸준히 공부하고 배우는 과정을 기록하는 공간입니다.  
+매일 작은 것 하나씩 익히고, 이해한 내용을 정리하며, 자연스러운 영어를 말하고 싶은 마음을 담아 포스트를 작성합니다.
 
-## 🎯 목표
+## 카테고리
 
-- 꾸준한 영어 학습 기록
-- 배운 내용 정리 및 복습
-- 다른 학습자들과 경험 공유
+- [Daily Expressions](./posts/daily-expressions/README.md)
+- [Grammar](./posts/grammar/README.md)
+- [Pronunciation](./posts/pronunciation/README.md)
+- [Idioms](./posts/idioms/README.md)
+- [Study Tips](./posts/study-tips/README.md)
+
+## 포스트 예시
+
+- [Greetings & Polite Expressions](./posts/daily-expressions/greetings-and-polite.md)
+- [Present Tense](./posts/grammar/present-tense.md)
+- [Common Idioms Part 1](./posts/idioms/common-idioms-1.md)
+- [How to Learn English Effectively](./posts/study-tips/effective-learning.md)
+
+## 목표
+
+- 매일 ���어 표현 하나씩 익히기
+- 문법과 표현을 실제 상황에 적용하기
+- 꾸준한 학습 기록 남기기
+- 영어 실력을 단계적으로 향상시키기
 
 ---
 
-**마지막 업데이트:** 2026년 10월
+마지막 업데이트: 2026년 10월

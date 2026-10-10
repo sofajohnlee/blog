@@ -2,70 +2,39 @@
 
 ## Break a leg
 
-### 의미
-행운을 빈다 (특히 공연이나 경기 전에)
+의미: 행운을 빌다, 특히 공연이나 발표 전에 사용
 
-### 예시
-```text
-"You're about to go on stage. Break a leg!"
-(무대 올라갈 거네. 화이팅!)
-```
-
----
+예문:
+- Good luck on your performance! Break a leg!
 
 ## Piece of cake
 
-### 의미
-아주 쉬운 일
+의미: 아주 쉬운 일
 
-### 예시
-```text
-"The exam was a piece of cake."
-(시험이 정말 쉬웠어.)
-
-"Don't worry, it's a piece of cake for me."
-(걱정하지 마, 나한테는 쉬운 일이야.)
-```
-
----
+예문:
+- The test was a piece of cake.
 
 ## Under the weather
 
-### 의미
-몸이 안 좋은 상태, 기분이 안 좋은 상태
+의미: 몸이 안 좋거나 기분이 좋지 않음
 
-### 예시
-```text
-"I'm feeling under the weather today, so I won't come to the meeting."
-(오늘 몸이 안 좋아서 회의에 못 갈 것 같아.)
-```
-
----
+예문:
+- I'm feeling under the weather today.
 
 ## Keep your fingers crossed
 
-### 의미
-행운을 빈다, 좋은 결과를 기대하다
+의미: 행운을 빌다
 
-### 예시
-```text
-"Keep your fingers crossed for my job interview!"
-(내 면접이 잘 되기를 바라줘!)
-```
-
----
+예문:
+- Keep your fingers crossed for my interview!
 
 ## Hit the books
 
-### 의미
-공부하다
+의미: 공부하다
 
-### 예시
-```text
-"I need to hit the books for the upcoming test."
-(다가올 시험을 위해 공부해야 해.)
-```
+예문:
+- I need to hit the books before the exam.
 
 ---
 
-💡 팁: 숙어는 문자 그대로 해석하면 안 되고, 전체 의미를 이해하는 것이 중요합니다!
+숙어는 뜻을 직역하면 오해할 수 있습니다. 문맥을 보고 의미를 파악하는 것이 중요합니다.
