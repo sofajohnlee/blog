@@ -14,7 +14,7 @@ description: "반복해서 사용해야 기억에 남는 기본 표현을 다시
 
 > What do you want to do this weekend?
 >
-> That sounds good. / I’m not sure yet. / It depends on the weather.
+> I’m not sure yet. / It depends on the weather.
 
 이런 연습을 하니 영어를 '정답 문장'으로만 생각하는 습관이 조금 줄었다. 하나의 상황에서 여러 표현을 선택할 수 있어야 실제 회화가 자연스러워진다.
 
