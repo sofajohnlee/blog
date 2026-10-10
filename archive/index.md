@@ -21,7 +21,7 @@ permalink: /archive/
           <span class="post-tag">{{ post.date | date: "%Y.%m.%d" }}</span>
           <h3>{{ post.title }}</h3>
           <p>{{ post.description }}</p>
-          <a href="{{ post.url | relative_url }}">읽어보기 →</a>
+          <a href="{{ post.url | relative_url }}?v={{ site.time | date: '%s' }}">읽어보기 →</a>
         </article>
       {% endfor %}
     </div>

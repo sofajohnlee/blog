@@ -19,19 +19,19 @@ layout: default
   </div>
   <nav class="post-navigation" aria-label="학습 기록 앞뒤 이동">
     {% if page.next %}
-      <a class="post-navigation-link post-navigation-next" href="{{ page.next.url | relative_url }}" rel="next">
+      <a class="post-navigation-link post-navigation-next" href="{{ page.next.url | relative_url }}?v={{ site.time | date: '%s' }}" rel="next">
         <span class="post-navigation-label">다음 글 →</span>
         <span class="post-navigation-title">{{ page.next.title | escape }}</span>
         <time datetime="{{ page.next.date | date_to_xmlschema }}">{{ page.next.date | date: "%Y.%m.%d" }}</time>
       </a>
     {% endif %}
     {% if page.previous %}
-      <a class="post-navigation-link post-navigation-previous" href="{{ page.previous.url | relative_url }}" rel="prev">
+      <a class="post-navigation-link post-navigation-previous" href="{{ page.previous.url | relative_url }}?v={{ site.time | date: '%s' }}" rel="prev">
         <span class="post-navigation-label">← 이전 글</span>
         <span class="post-navigation-title">{{ page.previous.title | escape }}</span>
         <time datetime="{{ page.previous.date | date_to_xmlschema }}">{{ page.previous.date | date: "%Y.%m.%d" }}</time>
       </a>
     {% endif %}
   </nav>
-  <a class="back-link" href="{{ '/categories/' | relative_url }}">← 카테고리로 돌아가기</a>
+  <a class="back-link" href="{{ '/categories/' | relative_url }}?v={{ site.time | date: '%s' }}">← 카테고리로 돌아가기</a>
 </article>

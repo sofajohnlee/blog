@@ -12,8 +12,8 @@ title: "English Study Journal"
         새로운 내용을 배우고 다시 복습한 과정을 한 곳에 남깁니다.
       </p>
       <div class="actions">
-        <a class="primary" href="{{ '/categories/' | relative_url }}">카테고리 보기</a>
-        <a class="secondary" href="{{ '/archive/' | relative_url }}">전체 학습 기록</a>
+        <a class="primary" href="{{ '/categories/' | relative_url }}?v={{ site.time | date: '%s' }}">카테고리 보기</a>
+        <a class="secondary" href="{{ '/archive/' | relative_url }}?v={{ site.time | date: '%s' }}">전체 학습 기록</a>
       </div>
     </div>
     <div class="hero-card">
@@ -79,10 +79,10 @@ title: "English Study Journal"
           <span class="post-tag">{{ post.categories | first }}</span>
           <h3>{{ post.title }}</h3>
           <p>{{ post.description }}</p>
-          <a href="{{ post.url | relative_url }}">읽어보기 →</a>
+          <a href="{{ post.url | relative_url }}?v={{ site.time | date: '%s' }}">읽어보기 →</a>
         </article>
       {% endfor %}
     </div>
-    <div class="section-more"><a class="secondary" href="{{ '/archive/' | relative_url }}">2024년부터 전체 기록 보기 →</a></div>
+    <div class="section-more"><a class="secondary" href="{{ '/archive/' | relative_url }}?v={{ site.time | date: '%s' }}">2024년부터 전체 기록 보기 →</a></div>
   </div>
 </section>
