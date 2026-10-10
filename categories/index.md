@@ -3,6 +3,7 @@ layout: default
 title: "카테고리"
 description: "English Study Journal의 영어 학습 카테고리"
 permalink: /categories/
+study_language: english
 ---
 <div class="section-heading">
   <span class="eyebrow">Categories</span>

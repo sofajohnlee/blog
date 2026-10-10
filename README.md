@@ -39,3 +39,7 @@ After a few minutes, the blog will be published at the URL above.
 ## Notes
 
 This is a simple static blog that is easy to maintain and update with new posts over time.
+
+## Japanese study (October 2026)
+
+English remains the default homepage and English archive. Japanese study is available at `/japanese/`, with three introductory posts on hiragana, katakana, and greetings/self-introductions. Posts use `study_language` to keep language lists and adjacent-post navigation separate. Existing posts default to English through `_config.yml`.

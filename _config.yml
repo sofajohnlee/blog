@@ -1,7 +1,13 @@
 title: "English Study Journal"
-description: "영어 공부 기록, 문법, 숙어, 발음, 학습 팁을 정리하는 개인 블로그"
+description: "영어 공부를 중심으로, 2026년 10월부터 일본어 기초 학습도 함께 기록하는 개인 블로그"
 url: "https://sofajohnlee.github.io"
 baseurl: "/blog"
 markdown: kramdown
 lang: ko
 permalink: pretty
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      study_language: english

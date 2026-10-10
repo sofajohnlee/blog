@@ -1,7 +1,9 @@
 ---
 layout: default
 title: "English Study Journal"
+study_language: english
 ---
+{% assign english_posts = site.posts | where: "study_language", "english" %}
 <section class="hero">
   <div class="container hero-inner">
     <div class="hero-copy">
@@ -10,17 +12,20 @@ title: "English Study Journal"
       <p>
         2024년 7월부터 영어 표현, 문법, 발음, 숙어, 학습 방법을 꾸준히 기록하고 있습니다.
         새로운 내용을 배우고 다시 복습한 과정을 한 곳에 남깁니다.
+        2026년 10월부터는 일본어 기초 공부도 함께 시작합니다.
       </p>
       <div class="actions">
         <a class="primary" href="{{ '/categories/' | relative_url }}?v={{ site.time | date: '%s' }}">카테고리 보기</a>
-        <a class="secondary" href="{{ '/archive/' | relative_url }}?v={{ site.time | date: '%s' }}">전체 학습 기록</a>
+        <a class="secondary" href="{{ '/archive/' | relative_url }}?v={{ site.time | date: '%s' }}">전체 영어 학습 기록</a>
+        <a class="secondary" href="{{ '/japanese/' | relative_url }}">일본어 공부 →</a>
       </div>
     </div>
     <div class="hero-card">
       <div class="card-badge">학습 기록</div>
       <ul>
         <li><strong>시작:</strong> 2024년 7월</li>
-        <li><strong>포스트:</strong> {{ site.posts.size }}개 이상</li>
+        <li><strong>영어 포스트:</strong> {{ english_posts.size }}개</li>
+        <li><strong>일본어 시작:</strong> 2026년 10월 · 문자와 기초 회화</li>
         <li><strong>주제:</strong> 회화 · 문법 · 발음 · 숙어 · 학습법</li>
         <li><strong>원칙:</strong> 배운 표현을 직접 말해 보기</li>
       </ul>
@@ -74,7 +79,7 @@ title: "English Study Journal"
       <h2>최근 정리한 글</h2>
     </div>
     <div class="post-list">
-      {% for post in site.posts limit:6 %}
+      {% for post in english_posts limit:6 %}
         <article class="post-item">
           <span class="post-tag">{{ post.categories | first }}</span>
           <h3>{{ post.title }}</h3>

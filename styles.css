@@ -477,3 +477,27 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
+/* Language navigation and character tables */
+.nav-links a[aria-current="page"] {
+  color: var(--primary-dark);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+a:focus-visible { outline: 3px solid var(--primary); outline-offset: 4px; }
+.article-content table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  margin: 24px 0;
+}
+.article-content th, .article-content td {
+  padding: 10px 14px;
+  border: 1px solid #dce3ef;
+  text-align: left;
+  white-space: nowrap;
+}
+.article-content th { background: var(--surface-soft); }
+.category-section, #characters, #posts { scroll-margin-top: 140px; }
