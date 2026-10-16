@@ -4,6 +4,7 @@ url: "https://sofajohnlee.github.io"
 baseurl: "/blog"
 markdown: kramdown
 lang: ko
+timezone: Asia/Seoul
 permalink: pretty
 defaults:
   - scope:

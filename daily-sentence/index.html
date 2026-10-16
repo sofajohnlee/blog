@@ -1,0 +1,39 @@
+---
+layout: default
+title: "매일 한 문장"
+description: "하루 하나의 영어 표현을 문맥, 해석, 문법과 예문으로 깊이 배우는 학습 노트"
+permalink: /daily-sentence/
+study_language: english
+daily_sentence: true
+---
+{% assign daily_posts = site.posts | where: "daily_sentence", true %}
+<div class="section-heading">
+  <span class="eyebrow">Daily English · One expression at a time</span>
+  <h1>매일 한 문장</h1>
+  <p class="page-intro">오늘의 핵심 문장 하나를 실제 대화 속에서 익힙니다. 함께 쓰는 표현과 전체 해석, 문법, 뉘앙스까지 차근차근 살펴보세요.</p>
+</div>
+{% assign latest = daily_posts | first %}
+{% if latest %}
+<section class="daily-feature" aria-labelledby="daily-heading">
+  <span class="post-tag">최근 학습 · <time datetime="{{ latest.date | date_to_xmlschema }}">{{ latest.date | date: '%Y.%m.%d' }}</time></span>
+  <h2 id="daily-heading">{{ latest.title | escape }}</h2>
+  <p class="daily-english" lang="en">{{ latest.key_sentence | escape }}</p>
+  <p>{{ latest.description | escape }}</p>
+  <a class="primary" href="{{ latest.url | relative_url }}">문장과 자세한 해설 보기 →</a>
+</section>
+{% endif %}
+<section class="category-section" aria-labelledby="daily-archive-heading">
+  <h2 id="daily-archive-heading">날짜별 학습 기록</h2>
+  <div class="post-list">
+    {% for post in daily_posts %}
+    <article class="post-item">
+      <span class="post-tag">{{ post.date | date: '%Y.%m.%d' }}</span>
+      <h3>{{ post.title | escape }}</h3>
+      <p>{{ post.description | escape }}</p>
+      <a href="{{ post.url | relative_url }}">공부하기 →</a>
+    </article>
+    {% else %}
+    <p>첫 학습 기록을 준비하고 있습니다.</p>
+    {% endfor %}
+  </div>
+</section>

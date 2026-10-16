@@ -47,3 +47,7 @@ English remains the default homepage and English archive. Japanese study is avai
 ## Cooking recipes
 
 Recipes are listed at `/recipes/`. Recipe posts use `layout: post`, `study_language: cooking`, and `categories: [recipes]`, with their own title, description, date and permalink. English remains the default home and archive; recipe navigation stays within cooking posts.
+
+## 매일 한 문장
+
+`/daily-sentence/`에서 날짜별 영어 표현과 해설을 볼 수 있습니다. 새 글은 `_posts/YYYY-MM-DD-title.md`에 작성하고 `layout: post`, `study_language: english`, `daily_sentence: true`, `categories: [daily-sentence]`, `key_sentence`, 한국 시간대가 포함된 `date`, 고유한 `permalink`를 지정합니다. 목록과 최근 학습 카드는 게시된 글에서 자동으로 생성됩니다.

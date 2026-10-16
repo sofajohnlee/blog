@@ -11,8 +11,8 @@ study_language: english
   <p class="page-intro">회화, 문법, 발음, 숙어, 학습법을 주제별로 정리했습니다.</p>
 </div>
 
-{% assign category_names = "daily-expressions,grammar,pronunciation,idioms,study-tips" | split: "," %}
-{% assign category_labels = "Daily Expressions,Grammar,Pronunciation,Idioms,Study Tips" | split: "," %}
+{% assign category_names = "daily-sentence,daily-expressions,grammar,pronunciation,idioms,study-tips" | split: "," %}
+{% assign category_labels = "매일 한 문장,Daily Expressions,Grammar,Pronunciation,Idioms,Study Tips" | split: "," %}
 
 {% for category in category_names %}
   {% assign label = category_labels[forloop.index0] %}

@@ -501,3 +501,28 @@ a:focus-visible { outline: 3px solid var(--primary); outline-offset: 4px; }
 }
 .article-content th { background: var(--surface-soft); }
 .category-section, #characters, #posts { scroll-margin-top: 140px; }
+
+/* Daily English notes */
+.nav { gap: 20px; }
+.nav-links { flex-wrap: wrap; justify-content: flex-end; }
+.daily-feature {
+  padding: clamp(24px, 5vw, 40px);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+}
+.daily-feature h2 { line-height: 1.45; }
+.daily-feature p { line-height: 1.8; }
+.daily-english { font-size: clamp(1.15rem, 3vw, 1.55rem); color: var(--primary-dark); }
+.article-content blockquote {
+  margin: 24px 0;
+  padding: 16px 22px;
+  border-left: 4px solid var(--primary);
+  background: var(--surface-soft);
+  border-radius: 0 12px 12px 0;
+  overflow-wrap: anywhere;
+}
+.article-content a { color: var(--primary-dark); text-decoration: underline; }
+.daily-article .article-content th, .daily-article .article-content td { white-space: normal; min-width: 120px; }
+@media (max-width: 900px) { .nav-links { justify-content: center; } }

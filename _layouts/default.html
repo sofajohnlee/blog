@@ -15,7 +15,8 @@
         <span>English Study Journal</span>
       </a>
       <nav class="nav-links" aria-label="블로그 메뉴">
-        <a href="{{ '/' | relative_url }}" {% if page.study_language == 'english' or page.study_language == nil %}aria-current="page"{% endif %}>영어 공부</a>
+        <a href="{{ '/' | relative_url }}" {% if page.daily_sentence != true and page.study_language == 'english' or page.study_language == nil %}aria-current="page"{% endif %}>영어 공부</a>
+        <a href="{{ '/daily-sentence/' | relative_url }}" {% if page.daily_sentence %}aria-current="page"{% endif %}>매일 한 문장</a>
         <a href="{{ '/japanese/' | relative_url }}" {% if page.study_language == 'japanese' %}aria-current="page"{% endif %}>일본어 공부</a>
         <a href="{{ '/recipes/' | relative_url }}" {% if page.study_language == 'cooking' %}aria-current="page"{% endif %}>요리 레시피</a>
         {% if page.study_language == 'japanese' %}
