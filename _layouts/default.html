@@ -24,7 +24,13 @@
             <a href="{{ '/japanese/' | relative_url }}" {% if page.study_language == 'japanese' %}aria-current="page"{% endif %}>일본어 공부</a>
           </div>
         </details>
-        <a href="{{ '/guitar/' | relative_url }}" {% if page.study_language == 'guitar' %}aria-current="page"{% endif %}>통기타</a>
+        <details class="language-menu">
+          <summary>통기타</summary>
+          <div class="language-submenu">
+            <a href="{{ '/guitar/' | relative_url }}">기본 코드 배우기</a>
+            <a href="{{ '/guitar/scores/' | relative_url }}" {% if page.guitar_scores %}aria-current="page"{% endif %}>악보</a>
+          </div>
+        </details>
         <a href="{{ '/recipes/' | relative_url }}" {% if page.study_language == 'cooking' %}aria-current="page"{% endif %}>요리 레시피</a>
       </nav>
     </div>
@@ -42,6 +48,7 @@
         {% elsif page.study_language == 'guitar' %}
         <a href="{{ '/guitar/#chords' | relative_url }}">기본 코드</a>
         <a href="{{ '/guitar/#practice' | relative_url }}">코드 전환 연습</a>
+        <a href="{{ '/guitar/scores/' | relative_url }}" {% if page.guitar_scores %}aria-current="page"{% endif %}>악보</a>
         {% elsif page.study_language != 'languages' %}
         <a href="{{ '/categories/' | relative_url }}">카테고리</a>
         <a href="{{ '/archive/' | relative_url }}">전체 영어 기록</a>

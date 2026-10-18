@@ -12,7 +12,7 @@ study_language: guitar
 
 코드는 여러 음을 함께 울리는 **화음**입니다. 왼손으로 줄을 누르고 오른손으로 줄을 튕기거나 쓸어 내려 반주합니다. 이 페이지는 **오른손잡이 기타·표준 튜닝** 기준으로 코드표를 읽고 기본 코드를 연습하는 입문 안내입니다.
 
-<div class="actions"><a class="primary" href="#chords">기본 코드 8개 보기</a><a class="secondary" href="#practice">코드 전환 연습</a></div>
+<div class="actions"><a class="primary" href="#chords">기본 코드 8개 보기</a><a class="secondary" href="#practice">코드 전환 연습</a><a class="secondary" href="{{ '/guitar/scores/' | relative_url }}">악보 보기</a></div>
 
 <div class="article-content" markdown="1">
 
@@ -195,6 +195,14 @@ C 운지 **x32010**은 5번 줄부터 **도–미–솔–높은 도–높은 �
 3. **3분:** 두 코드를 골라 4박자씩 번갈아 연주합니다.
 4. **2분:** G–D–Em–C를 일정한 박자로 연결합니다.
 5. **1분:** 잘 안 울린 줄과 어려운 전환을 기록합니다.
+
+<span id="scores"></span>
+
+## 악보
+
+**[조용필 · 그 겨울의 찻집 — 통기타 악보 안내]({{ '/guitar/scores/' | relative_url }})**
+
+코드·타브가 포함된 어쿠스틱 기타 악보의 정보와 미리보기·구매 링크를 확인하세요.
 
 ## 8. 오늘의 확인
 
