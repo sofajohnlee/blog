@@ -12,7 +12,7 @@ study_language: thinking
 
 머릿속에 할 일과 아이디어가 뒤섞여 있다면 **가운데에 주제를 하나 쓰고, 관련 생각을 가지처럼 펼쳐 보세요.** 마인드맵은 생각의 큰 흐름과 세부 내용을 한눈에 살펴보는 정리 방법입니다.
 
-<div class="actions"><a class="primary" href="#steps">작성법부터 보기</a><a class="secondary" href="#example">예시 살펴보기</a><a class="secondary" href="#template">직접 따라 하기</a></div>
+<div class="actions"><a class="primary" href="#steps">작성법부터 보기</a><a class="secondary" href="#example">예시 살펴보기</a><a class="secondary" href="#template">직접 따라 하기</a><a class="secondary" href="{{ '/thinking/korean-history/' | relative_url }}">한국사1급 · 기출 풀기</a></div>
 
 <div class="article-content" markdown="1">
 

@@ -31,7 +31,13 @@
             <a href="{{ '/guitar/scores/' | relative_url }}" {% if page.guitar_scores %}aria-current="page"{% endif %}>악보</a>
           </div>
         </details>
-        <a href="{{ '/thinking/' | relative_url }}" {% if page.study_language == 'thinking' %}aria-current="page"{% endif %}>생각정리</a>
+        <details class="language-menu">
+          <summary>생각정리</summary>
+          <div class="language-submenu">
+            <a href="{{ '/thinking/' | relative_url }}" {% if page.study_language == 'thinking' and page.history_exam != true %}aria-current="page"{% endif %}>마인드맵</a>
+            <a href="{{ '/thinking/korean-history/' | relative_url }}" {% if page.history_exam %}aria-current="page"{% endif %}>한국사1급</a>
+          </div>
+        </details>
         <a href="{{ '/recipes/' | relative_url }}" {% if page.study_language == 'cooking' %}aria-current="page"{% endif %}>요리 레시피</a>
       </nav>
     </div>
@@ -45,6 +51,7 @@
         <a href="{{ '/japanese/#posts' | relative_url }}">일본어 학습 기록</a>
         <a href="{{ '/japanese/historical-songs/' | relative_url }}">일제치하 노래</a>
         {% elsif page.study_language == 'thinking' %}
+        <a href="{{ '/thinking/korean-history/' | relative_url }}" {% if page.history_exam %}aria-current="page"{% endif %}>한국사1급 · 기출 풀기</a>
         <a href="{{ '/thinking/#steps' | relative_url }}">마인드맵 작성법</a>
         <a href="{{ '/thinking/#example' | relative_url }}">활용 예시</a>
         <a href="{{ '/thinking/#template' | relative_url }}">따라 쓰는 틀</a>
