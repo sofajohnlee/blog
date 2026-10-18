@@ -28,7 +28,9 @@ study_language: japanese
   <h2>일본어 학습 기록</h2>
   <div class="post-list">
     {% for post in japanese_posts %}
+    {% unless post.historical_song %}
     <article class="post-item"><span class="post-tag">일본어 · {{ post.date | date: '%Y.%m.%d' }}</span><h3>{{ post.title }}</h3><p>{{ post.description }}</p><a href="{{ post.url | relative_url }}">읽어보기 →</a></article>
+    {% endunless %}
     {% endfor %}
   </div>
 </section>
