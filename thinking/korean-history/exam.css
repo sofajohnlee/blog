@@ -14,7 +14,6 @@
 .exam-button:disabled { cursor: wait; opacity: .5; }
 .history-exam a:focus-visible, .exam-button:focus-visible { outline: 3px solid #7c3aed; outline-offset: 4px; }
 .exam-paper { padding: 0 0 28px; margin-bottom: 28px; border-bottom: 1px solid #dce3ef; }
-#paper-frame { width: 100%; height: 700px; border: 1px solid #ccd5e8; border-radius: 12px; background: #eef2ff; }
 .exam-progress { padding: 18px; border: 1px solid #dce3ef; border-radius: 14px; background: #f5f8ff; }
 .exam-progress-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; }
 .exam-progress a, .exam-source a, .exam-result a { color: #2d3ecf; text-decoration: underline; }
@@ -58,7 +57,6 @@
 @media (max-width: 700px) {
   .answer-sheet { grid-template-columns: 1fr; }
   .exam-result { padding: 16px; }
-  #paper-frame { height: 500px; }
   .history-exam .actions > * { width: 100%; text-align: center; }
   .answer-card, .exam-result { scroll-margin-top: 220px; }
 }

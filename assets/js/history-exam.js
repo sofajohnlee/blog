@@ -182,16 +182,6 @@
     sheet.setAttribute('aria-busy', 'false');
   }
 
-  get('preview-toggle').addEventListener('click', function () {
-    const panel = get('paper-preview');
-    panel.hidden = !panel.hidden;
-    this.setAttribute('aria-expanded', String(!panel.hidden));
-    this.textContent = panel.hidden ? '페이지 안에서 보기' : '문제지 미리보기 닫기';
-    if (!panel.hidden && !get('paper-frame').hasAttribute('src')) {
-      get('paper-frame').src = 'https://docs.google.com/gview?embedded=1&url=' + encodeURIComponent('https://www.historyexam.go.kr/atchFile/FileDown.do?atch_file_id=B_202610171048317020');
-    }
-  });
-
   sheet.addEventListener('change', function (event) {
     if (!event.target.matches('input[type="radio"]')) return;
     const number = Number(event.target.name.slice('question-'.length));
