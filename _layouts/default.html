@@ -15,27 +15,39 @@
         <span>English Study Journal</span>
       </a>
       <nav class="nav-links" aria-label="블로그 메뉴">
-        <a href="{{ '/' | relative_url }}" {% if page.daily_sentence != true and page.study_language == 'english' or page.study_language == nil %}aria-current="page"{% endif %}>영어 공부</a>
-        <a href="{{ '/daily-sentence/' | relative_url }}" {% if page.daily_sentence %}aria-current="page"{% endif %}>매일 한 문장</a>
-        <a href="{{ '/japanese/' | relative_url }}" {% if page.study_language == 'japanese' %}aria-current="page"{% endif %}>일본어 공부</a>
+        <details class="language-menu">
+          <summary>영어랑 일어랑</summary>
+          <div class="language-submenu">
+            <a href="{{ '/languages/' | relative_url }}">영어랑 일어랑 전체</a>
+            <a href="{{ '/' | relative_url }}" {% if page.study_language == 'english' and page.daily_sentence != true %}aria-current="page"{% endif %}>영어 공부</a>
+            <a href="{{ '/daily-sentence/' | relative_url }}" {% if page.daily_sentence %}aria-current="page"{% endif %}>매일 한 문장</a>
+            <a href="{{ '/japanese/' | relative_url }}" {% if page.study_language == 'japanese' %}aria-current="page"{% endif %}>일본어 공부</a>
+          </div>
+        </details>
+        <a href="{{ '/guitar/' | relative_url }}" {% if page.study_language == 'guitar' %}aria-current="page"{% endif %}>통기타</a>
         <a href="{{ '/recipes/' | relative_url }}" {% if page.study_language == 'cooking' %}aria-current="page"{% endif %}>요리 레시피</a>
-        {% if page.study_language == 'japanese' %}
-        <a href="{{ '/japanese/#characters' | relative_url }}">문자 익히기</a>
-        <a href="{{ '/japanese/#posts' | relative_url }}">일본어 학습 기록</a>
-        <a href="{{ '/japanese/historical-songs/' | relative_url }}">일제치하 노래</a>
-        {% elsif page.study_language == 'cooking' %}
-        <a href="{{ '/recipes/#posts' | relative_url }}">레시피 목록</a>
-        {% else %}
-        <a href="{{ '/categories/' | relative_url }}">카테고리</a>
-        <a href="{{ '/archive/' | relative_url }}">전체 기록</a>
-        <a href="{{ '/#posts' | relative_url }}">최신 글</a>
-        {% endif %}
       </nav>
     </div>
   </header>
 
   <main class="article-page">
     <div class="container article-container">
+      <nav class="section-nav" aria-label="분야별 메뉴">
+        {% if page.study_language == 'japanese' %}
+        <a href="{{ '/japanese/#characters' | relative_url }}">문자 익히기</a>
+        <a href="{{ '/japanese/#posts' | relative_url }}">일본어 학습 기록</a>
+        <a href="{{ '/japanese/historical-songs/' | relative_url }}">일제치하 노래</a>
+        {% elsif page.study_language == 'cooking' %}
+        <a href="{{ '/recipes/#posts' | relative_url }}">레시피 목록</a>
+        {% elsif page.study_language == 'guitar' %}
+        <a href="{{ '/guitar/#chords' | relative_url }}">기본 코드</a>
+        <a href="{{ '/guitar/#practice' | relative_url }}">코드 전환 연습</a>
+        {% elsif page.study_language != 'languages' %}
+        <a href="{{ '/categories/' | relative_url }}">카테고리</a>
+        <a href="{{ '/archive/' | relative_url }}">전체 영어 기록</a>
+        <a href="{{ '/#posts' | relative_url }}">최신 글</a>
+        {% endif %}
+      </nav>
       {{ content }}
     </div>
   </main>
